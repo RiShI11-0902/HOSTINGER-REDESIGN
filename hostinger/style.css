@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a{
+	position: relative;
+}
+a::after{
+	content: " ";
+	position: absolute;
+	background-color: whitesmoke;
+	height: 0.5px;
+	width: 100%;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s ease;
+	transform: scale(0,1);
+}
+a:hover::after{
+	/* width: 100%; */
+	transform: scale(1,1);
+}
